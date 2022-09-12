@@ -5,7 +5,7 @@
 #include <sys/time.h>
 #include <pthread.h>
 
-#define N_ITERATIONS 2000000000
+#define N_ITERATIONS 2000000000 // 2 mill millones
 
 int main(int argc, char const *argv[])
 {
@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 		sign *= -1;
 	}
 
-	printf("%f\n", pi);
+	printf("PI: %f\n", pi);
 
 	gettimeofday(&ts, NULL);
 	stop_ts = ts.tv_sec; // Tiempo final
